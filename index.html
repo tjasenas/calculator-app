@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body class="theme-one">
+  <main class="container">
+
+    <div class="header">
+      <a class="header__logo" href="">Calc</a>
+      <div class="theme">
+        <div class="theme_text">THEME</div>
+        <div class="theme__numbers">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </div>
+        <div class="theme__options">
+          <span data-theme="theme-one" class="option active"></span>
+          <span data-theme="theme-two" class="option"></span>
+          <span data-theme="theme-three" class="option"></span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="calc-results"></div>
+
+    <div class="calc">
+      <div class="calc__keypad">
+        <div class="btn number">7</div>
+        <div class="btn number">8</div>
+        <div class="btn number">9</div>
+        <div class="btn btn-primary delete">DEL</div>
+        <div class="btn number">4</div>
+        <div class="btn number">5</div>
+        <div class="btn number">6</div>
+        <div class="btn plus operator">+</div>
+        <div class="btn number">1</div>
+        <div class="btn number">2</div>
+        <div class="btn number">3</div>
+        <div class="btn minus operator">-</div>
+        <div class="btn dot number">.</div>
+        <div class="btn number">0</div>
+        <div class="btn divide operator">/</div>
+        <div class="btn multiply operator">x</div>
+      </div>
+
+      <div class="calc__buttons">
+        <div class="btn btn-primary reset">RESET</div>
+        <div class="btn btn-secondary equal">=</div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Tjasenas</a>.
+  </footer>
+</body>
+</html>

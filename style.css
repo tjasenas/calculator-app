@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.container {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+.header__logo {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: inherit;
+}
+
+/* Theme options */
+
+.theme {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+.theme_text {
+    grid-row: 2 / 3;
+    align-self: center;
+    font-size: 0.8rem;
+}
+.theme__numbers {
+    grid-column: 2 / 3;
+    display: flex;
+}
+.theme__numbers span {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+.theme__options {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+.option {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    cursor: pointer; 
+}
+.option.active {
+    border-radius: 11px;
+}
+
+/* Results */
+
+.calc-results {
+    padding: 2rem;
+    font-size: 3rem;
+    text-align: right;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Keypad */
+
+.calc {
+    border-radius: 1rem;
+    padding: 1.5rem
+}
+.calc__keypad {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.btn {
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem 0 0.6rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary {
+    font-size: 1.8rem;
+    padding: 1.3rem 0 1rem 0;
+    transition: background-color 0.3s ease-in-out;
+}
+.calc__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 2rem
+}
+
+@media (min-width: 450px) {
+    .calc__keypad {
+        gap: 1.5rem
+    }
+    .calc__buttons {
+        gap: 1.5rem;
+    }
+}
+
+
+
+
+/* --------- Calc Themes ---------
+//////////////////////////////////////////////////////////*/
+
+/* Theme one */
+
+.theme-one {
+    background-color: hsl(222, 26%, 31%);
+}
+
+/* Header */
+
+.theme-one .header {
+    color: hsl(0, 0%, 100%);
+}
+.theme-one .theme__options {
+    background-color: hsl(223, 31%, 20%);
+}
+.theme-one .option.active {
+    background-color: hsl(6, 63%, 50%);
+}
+
+/* Results */
+
+.theme-one .calc-results {
+    background-color:  hsl(224, 36%, 15%);
+    color: hsl(0, 0%, 100%);
+}
+
+/* Keypad */
+
+.theme-one .calc {
+    background-color: hsl(223, 31%, 20%);
+}
+.theme-one .btn {
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0 5px 0 hsl(28, 16%, 65%);
+    color: hsl(223, 31%, 20%);
+}
+.theme-one .btn:hover {
+    background-color: hsl(0, 0%, 100%);
+}
+.theme-one .btn-primary {
+    background-color: hsl(225, 21%, 49%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 5px 0 hsl(224, 28%, 35%);
+}
+.theme-one .btn-primary:hover {
+    background-color: hsl(225, 21%, 59%);
+}
+.theme-one .btn-secondary {
+    background-color: hsl(6, 63%, 50%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 5px 0 hsl(6, 70%, 34%);
+    transition: background-color 0.3s ease-in-out;
+}
+.theme-one .btn-secondary:hover {
+    background-color: hsl(6, 63%, 60%);
+}
+.theme-one .footer {
+    color: hsl(0, 0%, 100%);
+}
+.theme-one .footer a {
+    color: hsl(6, 63%, 60%);
+}
+
+
+
+/*//////////////////////////////////////////////////////////*/
+
+/* Theme two */
+
+.theme-two {
+    background-color: hsl(0, 0%, 90%);
+}
+
+/* Header */
+
+.theme-two .header {
+    color: hsl(60, 10%, 19%);
+}
+.theme-two .theme__options {
+    background-color: hsl(0, 5%, 81%);
+}
+.theme-two .option.active {
+    background-color: hsl(25, 98%, 40%)
+}
+
+/* Results */
+
+.theme-two .calc-results {
+    background-color:  hsl(0, 0%, 100%);
+    color: hsl(60, 10%, 19%);
+}
+
+/* Keypad */
+
+.theme-two .calc {
+    background-color: hsl(0, 5%, 81%);
+}
+.theme-two .btn {
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0 5px 0 hsl(35, 11%, 61%);
+    color: hsl(60, 10%, 19%);
+}
+.theme-two .btn:hover {
+    background-color: hsl(0, 0%, 100%);
+}
+.theme-two .btn-primary {
+    background-color: hsl(185, 42%, 37%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 5px 0 hsl(185, 58%, 25%);
+}
+.theme-two .btn-primary:hover {
+    background-color: hsl(185, 42%, 47%);
+}
+.theme-two .btn-secondary {
+    background-color: hsl(25, 98%, 40%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 5px 0 hsl(25, 99%, 27%);
+    transition: background-color 0.3s ease-in-out;
+}
+.theme-two .btn-secondary:hover {
+    background-color: hsl(25, 98%, 50%);
+}
+.theme-two .footer {
+    color: hsl(60, 10%, 19%);
+}
+.theme-two .footer a {
+    color: hsl(25, 98%, 50%);
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////*/
+
+/* Theme two */
+
+.theme-three {
+    background-color:  hsl(268, 75%, 9%);
+}
+
+/* Header */
+
+.theme-three .header {
+    color: hsl(52, 100%, 62%);
+}
+.theme-three .theme__options {
+    background-color: hsl(268, 71%, 12%)
+}
+.theme-three .option.active {
+    background-color: hsl(176, 100%, 44%);
+}
+
+/* Results */
+
+.theme-three .calc-results {
+    background-color:  hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+}
+
+/* Keypad */
+
+.theme-three .calc {
+    background-color: hsl(268, 71%, 12%);
+}
+.theme-three .btn {
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0 5px 0  hsl(290, 70%, 36%);
+    color: hsl(52, 100%, 62%);
+}
+.theme-three .btn:hover {
+    background-color: hsl(268, 47%, 31%);
+}
+.theme-three .btn-primary {
+    background-color: hsl(281, 89%, 26%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 5px 0 hsl(285, 91%, 52%);
+}
+.theme-three .btn-primary:hover {
+    background-color: hsl(281, 89%, 36%);
+}
+.theme-three .btn-secondary {
+    background-color: hsl(176, 100%, 44%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 5px 0  hsl(177, 92%, 70%);
+    transition: background-color 0.3s ease-in-out;
+}
+.theme-three .btn-secondary:hover {
+    background-color: hsl(176, 100%, 54%);
+}
+.theme-three .footer {
+    color: hsl(52, 100%, 62%);
+}
+.theme-three .footer a {
+    color: hsl(176, 100%, 44%);
+}
