@@ -12,7 +12,6 @@ const calcResults = document.querySelector('.calc-results');
     calcResults.textContent = '0';
 
     const data = localStorage.getItem('Theme');
-    console.log(data);
     if(!data) return;
 
     // Remove classes
