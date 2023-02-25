@@ -5,6 +5,8 @@ const options = optionsBlock.querySelectorAll('.option');
 const calcPad = document.querySelector('.calc');
 const calcResults = document.querySelector('.calc-results');
 
+
+
 (function(){
     // Reset input
     calcResults.textContent = '0';
