@@ -8,21 +8,21 @@ const calcResults = document.querySelector('.calc-results');
 
 
 (function(){
-    // Reset input
-    calcResults.textContent = '0';
+    // // Reset input
+    // calcResults.textContent = '0';
 
-    const data = localStorage.getItem('Theme');
-    if(!data) return;
+    // const data = localStorage.getItem('Theme');
+    // if(!data) return;
 
-    // Remove classes
-    options.forEach(el => el.classList.remove('active'));
-    document.body.className = '';
+    // // Remove classes
+    // options.forEach(el => el.classList.remove('active'));
+    // document.body.className = '';
 
 
-    console.log(data);
-    // Add classes
-    document.querySelector(`[data-theme="${data}"]`).classList.add('active');
-    document.body.classList.add(data);
+    // console.log(data);
+    // // Add classes
+    // document.querySelector(`[data-theme="${data}"]`).classList.add('active');
+    // document.body.classList.add(data);
 })();
 
 optionsBlock.addEventListener('click', function(e){
