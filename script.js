@@ -18,6 +18,8 @@ const calcResults = document.querySelector('.calc-results');
     options.forEach(el => el.classList.remove('active'));
     document.body.className = '';
 
+
+    console.log(data);
     // Add classes
     document.querySelector(`[data-theme="${data}"]`).classList.add('active');
     document.body.classList.add(data);
